@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="WikiAutoGen">
+  <meta name="keywords" content="multi-modal Wikipedia, multi-agent, vision-language">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WikiAutoGen</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <meta name="google-site-verification" content="6lbYN1vX7A4sD8SrVniq84UEKyEUSBgxeP7d3FjuuK0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- <link rel="icon" href="./static/images/icon.png"> -->
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  </head>
+
+  <style>
+
+    #main{
+        position: relative;;
+        width: 1200px;
+    }
+
+    .box{
+        float: left;
+        padding: 15px 0 0 15px;
+/*        background-color: red;*/
+    }
+
+    .pic{
+        width: 500px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .pic img{
+        width: 500px;
+    }
+
+  </style>
+
+
+
+  <body>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">WikiAutoGen: Towards Multi-Modal Wikipedia-Style Article Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <div class="authors">
+                  <a href="https://01yzzyu.github.io/yzzyu.github.io/" target="_blank">Zhongyu Yang</a><sup>1,2*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://junchen14.github.io/" target="_blank">Jun Chen</a><sup>1*</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=zPEqPfUAAAAJ&hl=zh-CN" target="_blank">Dannong Xu</a><sup>1,3*</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://feielysia.github.io/" target="_blank">Junjie Fei</a><sup>1</sup>,</span>
+                  <span class="author-block">       
+                  <a href="https://xiaoqian-shen.github.io/" target="_blank">Xiaoqian Shen</a><sup>1</sup>,</span>
+                  <span class="author-block">        
+                  <a href="https://liangbingzhao.github.io/" target="_blank">Liangbing Zhao</a><sup>1</sup>,</span>
+                  <span class="author-block">        
+                   <a href="https://scholar.google.com.hk/citations?user=g2nqHBcAAAAJ&hl=zh-CN" target="_blank">Chun-Mei Feng</a><sup>4</sup>,</span>
+                  <span class="author-block">        
+                  <a href="https://scholar.google.com/citations?user=iRBUTOAAAAAJ&hl=en" target="_blank">Mohamed Elhoseiny</a><sup>1†</sup>,</span>
+                  <span class="author-block">        
+                  </span>
+                  </div>
+
+              <div class="is-size-5 publication-authors">
+                  <span class="author-block">
+                      <sup>1</sup>King Abdullah University of Science and Technology<br>
+                      <sup>2</sup>Lanzhou University<br>
+                      <sup>3</sup>The University of Sydney<br>
+                      <sup>4</sup>IHPC, A*STAR<br>               
+                  </span>
+                  <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
+                  <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding author</small></span>
+              </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-black"
+                        style="color: white;">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+                      
+                  <!-- Example link -->
+                   <span class="link-block">
+                        <a href="https://wikiautogen.github.io/WikiAutoGen/" target="_blank"
+                      class="external-link button is-normal is-rounded is-black"
+                      style="color: white;">
+                      <span class="icon">
+                      <i class="fa fa-book"></i>
+                    </span>
+                    <span>Example</span>
+                  </a>
+                </span>
+
+                      
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-black"
+                    style="color: white;">
+                      <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/1_00.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+       <h2 class="subtitle has-text-justified"><span style="font-weight: bolder;">Comparison of existing text-only article generation methods and our proposed WikiAutoGen.</span>
+        Existing approaches rely exclusively on textual sources, 
+        often producing inconsistent or inaccurate results. For example, in (a), the target topic is ‘Benzoxonium Chloride’, 
+        yet the baseline incorrectly generates information about ‘Benzalkonium Chloride’. 
+        In contrast, our  WikiAutoGen framework integrates both visual and textual modalities to generate coherent multimodal content. Additionally, 
+        WikiAutoGen employs a multi-perspective self-reflection mechanism, significantly improving content accuracy and reliability, as illustrated in (b).
+      </h2>
+    </div>
+  </div>
+</section>
+
+  
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Knowledge discovery and collection are intelligence-intensive tasks that traditionally require significant human effort to ensure high-quality outputs. Recent research has explored multi-agent frameworks for automating Wikipedia-style article generation by retrieving and synthesizing information from the internet. However, these methods primarily focus on text-only generation, overlooking the importance of multimodal content in enhancing informativeness and engagement. In this work, we introduce WikiAutoGen, a novel system for automated multimodal Wikipedia-style article generation. Unlike prior approaches, WikiAutoGen retrieves and integrates relevant images alongside text, enriching both the depth and visual appeal of generated content. To further improve factual accuracy and comprehensiveness, we propose a multi-perspective self-reflection mechanism, which critically assesses retrieved content from diverse viewpoints to enhance reliability, breadth, and coherence, etc. Additionally, we introduce WikiSeek, a benchmark comprising Wikipedia articles with topics paired with both textual and image-based representations, designed to evaluate multimodal knowledge generation on more challenging topics. Experimental results show that WikiAutoGen outperforms previous methods by 8\%-29\% on our WikiSeek benchmark, producing more accurate, coherent, and visually enriched Wikipedia-style articles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<div style="margin: 2%;"></div>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <img stype="margin:20px" src="static/pipeline_00.png" alt="MY ALT TEXT"/>
+        <div style="margin: 2%;"></div>
+        <h2 class="subtitle has-text-justified"><span style="font-weight: bolder;">Overview of WikiAutoGen.</span>
+          WikiAutoGen, our multimodal framework for Wikipedia-style article generation. The pipeline includes three main stages: 
+          (1) an Outline Proposal module that structures the article outline based on the multimodal topic input (image and text); 
+          (2) a Textual Article Writing module involving persona generation, multi-agent collaborative exploration, and article drafting; and 
+          (3) a Multimodal Article Writing module that incorporates relevant images through positioning proposals, retrieval, selection, and final polishing. The entire generation process is enhanced by a 
+          Multi-Perspective Self-Reflection module, leveraging supervisory and agent-specific feedback (writer, reader, editor) to iteratively improve article quality in terms of coherence, readability and engagement, etc
+        </h2>
+      </div>
+    </div>
+  </div>
+  
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
