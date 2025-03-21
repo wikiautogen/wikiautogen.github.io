@@ -113,15 +113,18 @@
                   </span>
                   </div>
 
-                  <div class="is-size-5 publication-authors" style="white-space: normal; word-wrap: break-word;">
-                      <span class="author-block">
-                          <sup>1</sup>King Abdullah University of Science and Technology
-                          <sup>2</sup>Lanzhou University
-                          <sup>3</sup>The University of Sydney
-                          <sup>4</sup>IHPC, A*STAR
-                          <sup>5</sup>Meta AI
-                      </span>
-                      <span class="eql-cntrb"><small><sup>*</sup>Equal contribution</small></span>
+                  <div class="is-size-5 publication-authors" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                      <div style="flex: 1 1 45%;"> <!-- 第一行 -->
+                          <span><sup>1</sup>King Abdullah University of Science and Technology</span>
+                          <span><sup>2</sup>Lanzhou University</span>
+                      </div>
+                      <div style="flex: 1 1 45%;"> <!-- 第二行 -->
+                          <span><sup>3</sup>The University of Sydney</span>
+                          <span><sup>4</sup>IHPC, A*STAR</span>
+                      </div>
+                      <div class="eql-cntrb" style="flex: 1 1 100%; text-align: center;">
+                          <small><sup>*</sup>Equal contribution</small>
+                      </div>
                   </div>
                   <div class="column has-text-centered">
                     <div class="publication-links">
